@@ -13,7 +13,9 @@ function currentTime() {
     let time = hour + ":" + min + ":" + sec;
     let watch = document.querySelector("#watch");
     watch.innerHTML = time;
-
+    
+    // para cambiar de color el dia de la semana
+    
     let dias = document.querySelectorAll(".dias li");
     let diaActual = new Date().getDay();
     dias[diaActual].style.color = "#780000"
